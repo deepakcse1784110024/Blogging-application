@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Blogs</title>
+    <style type="text/css">
+      body {
+        background: #c2e59c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #64b3f4, #c2e59c);
+      } 
+    </style>
+</head>
+<body>
+    <div class="card text-center bg-dark">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active " href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'developer' %}">About Developer</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'create_post' %}">Create post</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#" tabindex="-1" >Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="{% url 'logout' %}" tabindex="-1" >logout</a>
+            </li>
+          </ul>
+        </div>
+       
+      </div>
